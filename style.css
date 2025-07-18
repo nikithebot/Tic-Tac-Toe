@@ -1,0 +1,89 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Trebuchet MS';
+}
+
+body{
+    background: linear-gradient(to right, #35033b, #010f36);
+}
+
+#top{
+    display: flex;
+}
+
+#heading{
+    margin-left: 630px;
+    font-size: 50px;
+    margin-top: 10px;
+    text-decoration: underline;
+    color: white;
+    transition: color 0.3s ease;
+}
+
+#toggle-icon{
+    cursor: pointer;
+    margin: 20px 20px 20px 500px;
+    padding: 10px 20px;
+    font-size: 30px;
+    color: silver;
+    text-shadow: 0 0 5px black, 0 0 7px silver;
+    transition: transform 0.5s ease, color 0.3s ease, opacity 0.3s ease;
+}
+
+#toggle-icon:hover{
+    transform: rotate(250deg);
+    color: gold;
+    font-size: 30px;
+}
+
+.dark-mode #toggle-icon.fa-sun{
+    color: goldenrod;
+    text-shadow: 0 0 5px black, 0 0 10px black;
+}
+
+#outer-box{
+    height: 500px;
+    width: 500px;
+    background-color: #ad4cf8;
+    box-shadow: 10px 10px 20px black;
+    border-radius: 20px;
+    margin: 30px auto;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+#outer-box:hover{
+    box-shadow: 10px 10px 40px black;
+    transition: 0.5s;
+}
+
+.inner-box{
+    height: 150px;
+    width: 150px;
+    background-color: #ffffff;
+    box-shadow: 2px 2px 3px black;
+    border-radius: 15px;
+}
+
+.inner-box:hover{
+    box-shadow: 5px 5px 10px rgb(0, 0, 0);
+    transition: 0.5s;
+    border-radius: 30px;
+}
+
+.dark-mode{
+    background: linear-gradient(to right, #8e44ad, #3498db);
+    color: black;
+}
+
+.dark-mode #heading{
+    color: rgb(0, 0, 0);
+    transition: color 0.3s ease;
+}
+
+.dark-mode #toggle-icon {
+    color: black;
+}
